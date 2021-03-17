@@ -1,5 +1,5 @@
 #Drone CI File!
-#Commit Message: Drone! Captain Canary is here! 
+#Commit Message: ASA-Drone Server
 
 kind: pipeline
 type: docker
