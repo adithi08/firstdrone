@@ -23,4 +23,4 @@ steps:
     auto_tag: true
     auto_tag_suffix: drone-build
 
-#Will be adding steps for Container image scan, showing demo to James
+#Will be adding steps for Container image scan, showing demo to James Robinson
