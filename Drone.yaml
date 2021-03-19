@@ -12,6 +12,11 @@ steps:
   commands:
     - "go build -o ./myapp"
 
+- name: statictest
+  image: owasp/sonarqube
+  commands:
+    - owasp/sonarqube
+
 - name: publish  
   image: plugins/docker
   settings:
