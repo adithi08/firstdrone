@@ -11,13 +11,14 @@ steps:
   image: golang:1.13
   commands:
     - "go build -o ./myapp"
-#'''
+
+
 #- name: statictest
 #  image: zaquestion/sonarqube-scanner
 #  pull: if-not-exists
 #  commands:
 #    - zaquestion/sonarqube-scanner
-#'''
+
 
 - name: publish  
   image: plugins/docker
