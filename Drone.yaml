@@ -16,7 +16,7 @@ steps:
   image: sonarqube
   pull: if-not-exists
   commands:
-    - sonarqube
+    - sonarqube-custom
 
 - name: publish  
   image: plugins/docker
