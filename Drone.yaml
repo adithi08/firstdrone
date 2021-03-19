@@ -13,10 +13,10 @@ steps:
     - "go build -o ./myapp"
 
 - name: statictest
-  image: owasp/sonarqube
+  image: sonarqube
   pull: if-not-exists
   commands:
-    - owasp/sonarqube
+    - sonarqube
 
 - name: publish  
   image: plugins/docker
