@@ -14,6 +14,7 @@ steps:
 
 - name: statictest
   image: owasp/sonarqube
+  pull: if-not-exists
   commands:
     - owasp/sonarqube
 
