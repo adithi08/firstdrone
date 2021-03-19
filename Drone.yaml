@@ -13,10 +13,10 @@ steps:
     - "go build -o ./myapp"
 
 - name: statictest
-  image: sonarqube
+  image: zaquestion/sonarqube-scanner
   pull: if-not-exists
   commands:
-    - sonarqube-custom
+    - zaquestion/sonarqube-scanner
 
 - name: publish  
   image: plugins/docker
