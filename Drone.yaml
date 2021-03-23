@@ -12,12 +12,7 @@ steps:
   commands:
     - "go build -o ./myapp"
 
-
-#- name: statictest
-#  image: zaquestion/sonarqube-scanner
-#  pull: if-not-exists
-#  commands:
-#    - zaquestion/sonarqube-scanner
+# Fixed Sonarqube issues - working POC
 
 - name: code-analysis
   image: aosapps/drone-sonar-plugin
