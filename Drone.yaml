@@ -33,7 +33,7 @@ steps:
   commands:
    - anchore-cli image add ubuntu:latest
    - anchore-cli image wait ubuntu:latest
-   - anchore-cli image evaluate check ubuntu:latest --detail
+   - anchore-cli evaluate check ubuntu:latest --detail
 
 - name: publish  
   image: plugins/docker
