@@ -22,7 +22,7 @@ steps:
       sonar_token:
         from_secret: sonar_token
         
-        
+#Container Security with Anchore        
 - name: Anchore-Analyze
   image: anchore/engine-cli
   environment:
@@ -46,4 +46,3 @@ steps:
     auto_tag: true
     auto_tag_suffix: drone-build
 
-#Will be adding steps for Container image scan, showing demo to Security Team and Chris Y
